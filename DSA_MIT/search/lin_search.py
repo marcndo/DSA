@@ -1,24 +1,30 @@
 """
-linear search algo
-=====================
-LINEAR-SEARCH(arr, search_item)
+Exercise 2-1-4
+pseudo code
+============
+LINEAR-SEARCH(arr, x)
     index = 0
-    if arr[index] == search_item
-        return index
-    else
-        while index <=len(arr) and arr[index] < search_item
-            index +=1
-        return item not in list
+    while index < len(arr) and arr[index] <= x
+       if arr[index]== x
+           return index
+       else
+           index +=1
+    return item not in the list
 """
+def linear_search(arr, x):
+    """Return and index for a search item if foud in the list
+    Args:
+        arr (list): list of numbers
+        x (int): searched item
 
-def linear_search(arr, search_item):
-    search_index = 0
-    print(search_index)
-    if arr[search_index] == search_item:
-        return search_index
-    else:
-        while search_index < len(arr) and arr[search_index] <= search_item:
-            search_index +=1
-    return 
-
-print(linear_search([1, 3, 4, 5, 6, 7, 9], 9))
+    Returns:
+        int: index of search item if item is in the list.
+        str: if item not in the list
+    """
+    index = 0
+    while index < len(arr) and arr[index] <= x:
+        if arr[index] == x:
+            return f"Search intem is in index {index}"
+        else:
+            index +=1
+    return f'Item {x} not in the list'
