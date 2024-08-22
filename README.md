@@ -18,7 +18,7 @@ Two resources are considered in this process.
    + The different folder does what their names are e.g search folder: implement search algorithms.
    + pseudocodes: solutions to exercise that warrant designing algorithms. The numbering is inline with the numbering of the exercises in the [text](https://dl.ebooksworld.ir/books/Introduction.to.Algorithms.4th.Leiserson.Stein.Rivest.Cormen.MIT.Press.9780262046305.EBooksWorld.ir.pdf).
    + proofs: solution to exercises that warrant proofs.
-   `N.B`
+>[!`N.B`]
    -  pseudocode and proofs constitude other sub folders which are chapters that contain solutions to exercises that 
  requires pseudocodes and proofs of the different chapters.
    - Only exercises requiring pseudocodes, proofs, and algorithms analysis are considered in this repository.
