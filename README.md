@@ -16,6 +16,6 @@ Two resources are considered in this process.
    This repository contain two main folders, DSA_MIT for algorithm with [MIT](https://ocw.mit.edu/search/?q=data%20structure%20and%20algorithm&t=Computer%20Science&t=Mathematics&t=Programming%20Languages) and DSA_Goolge for Data Structure and Algorithm with [Google](https://techdevguide.withgoogle.com/paths/data-structures-and-algorithms/).
     ### Structure of DSA_MIT.
    + The different folder does what their names are e.g search folder: implement search algorithms.
-   + pseudocodes: solutions to exercise that warrant designing algorithms. The numbering is inline with the numbering of the exercises in the [text](https://dl.ebooksworld.ir/books/Introduction.to.Algorithms.4th.Leiserson.Stein.Rivest.Cormen.MIT.Press.9780262046305.EBooksWorld.ir.pdf)
+   + pseudocodes: solutions to exercise that warrant designing algorithms. The numbering is inline with the numbering of the exercises in the [text](https://dl.ebooksworld.ir/books/Introduction.to.Algorithms.4th.Leiserson.Stein.Rivest.Cormen.MIT.Press.9780262046305.EBooksWorld.ir.pdf).
    + proofs: solution to exercises that warrant proofs. 
    
