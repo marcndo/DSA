@@ -1,6 +1,6 @@
 class MyHashSet:
 
-    def __init__(self, item):
+    def __init__(self):
         self.item = []
 
     def add(self, key: int) -> None:
@@ -20,7 +20,7 @@ class MyHashSet:
             return False
 
 
-object1 = MyHashSet('Buckets')
+object1 = MyHashSet()
 
 object1.add(1)
 object1.add(2)
