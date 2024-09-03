@@ -8,7 +8,7 @@ class MyHashSet:
         if self.key in self.item:
             pass
         else:
-            return self.item.append(self.key)
+            self.item.append(self.key)
 
     def remove(self, key: int) -> None:
         self.item.remove(self.key)
