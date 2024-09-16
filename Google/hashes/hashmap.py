@@ -19,10 +19,10 @@ class MyHashMap:
                 return pair[1]
         return -1
 
-    # def remove(self, key):
-    #     for i, pair in enumerate(self.map_):
-    #         if pair[0] == key:
-    #             del self.map_[i]
+    def remove(self, key):
+        for i, pair in enumerate(self.map_):
+            if pair[0] == key:
+                del self.map_[i]
 
 
 myHashMap = MyHashMap()
