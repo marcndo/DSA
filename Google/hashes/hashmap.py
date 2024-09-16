@@ -1,34 +1,36 @@
 class MyHashMap:
-
     def __init__(self):
         self.map_ = []
-#needs to fix the put function to avoid duplicate values in line 12 through 16
-    def put(self, key: int, value: int) -> None:
-        self.key = key
-        self.value = value
-        if len(self.map_) == 0:
-            self.map_.append([key, value])
+
+    @staticmethod
+    def hash_function(key):
+        return hash(key)
+
+    def put(self, key, value):
+        index = self.hash_function(key)
+        print(index)
+        for pair in self.map_:
+            if pair[0] == key:
+                pair[1] = value
         else:
-            for item in self.map_:
-                if item[0] == key:
-                    item[1] = value
-                elif [self.key, self.value] not in self.map_:
-                    self.map_.append([self.key, self.value])
+            self.map_.append([key, value])
 
-    def get(self, key: int) -> int:
-        return self.key
-
-    def remove(self, key: int) -> None:
-        for item in self.map_:
-            if self.key == item[0]:
-                self.map_.remove(item)
+    def get(self, key):
+        for pair in self.map_:
+            if self.hash_function(key) == pair[0]:
+                return pair[1]
             else:
-                key = -1
-                return key
+                return -1
+
+    def remove(self):
+        pass
 
 
 myHashMap = MyHashMap()
 myHashMap.put(1, 1)
 myHashMap.put(2, 2)
-myHashMap.put(2, 8)
 print(myHashMap.map_)
+print(myHashMap.get(3))
+
+
+
